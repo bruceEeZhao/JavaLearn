@@ -1,4 +1,4 @@
-package observer;
+package observer.push;
 
 import java.util.ArrayList;
 
@@ -23,18 +23,6 @@ public class WeatherData implements Subject {
         for (Observer o : observers) {
             o.update(this.temperature, this.humidity, this.pressure);
         }
-    }
-
-    public float getHumidity() {
-        return humidity;
-    }
-
-    public float getPressure() {
-        return pressure;
-    }
-
-    public float getTemperature() {
-        return temperature;
     }
 
     public void measurementsChanged(float temperature, float humidity, float pressure) {

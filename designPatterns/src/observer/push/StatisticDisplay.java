@@ -1,10 +1,10 @@
-package observer;
+package observer.push;
 
 public class StatisticDisplay implements Observer,DisplayElement {
     private float humidity;
     @Override
     public void display() {
-        System.out.println("humidity is " + humidity);
+        System.out.println("StatisticDisplay: " + "humidity is " + humidity);
     }
 
     @Override

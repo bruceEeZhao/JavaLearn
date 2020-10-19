@@ -1,11 +1,11 @@
-package observer;
+package observer.push;
 
 public class ForcastDisplay implements Observer,DisplayElement {
     private float pressure;
 
     @Override
     public void display() {
-        System.out.println("pressure is " + pressure);
+        System.out.println("ForcastDisplay: " + "pressure is " + pressure);
     }
 
     @Override

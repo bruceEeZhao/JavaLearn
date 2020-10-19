@@ -1,8 +1,8 @@
-package observer;
+package observer.pull;
 
 public class WeatherStation {
-
     public static void main(String[] args) {
+        System.out.println("++++++++++++pull start++++++++++++");
         WeatherData weatherData = new WeatherData();
 
         CurrentCondition c = new CurrentCondition();

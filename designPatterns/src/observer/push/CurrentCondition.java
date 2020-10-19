@@ -1,4 +1,4 @@
-package observer;
+package observer.push;
 
 public class CurrentCondition implements Observer, DisplayElement {
     private float temperature;
@@ -11,7 +11,7 @@ public class CurrentCondition implements Observer, DisplayElement {
 
     @Override
     public void display() {
-        System.out.println("temperature is " + temperature + ".C");
+        System.out.println("CurrentCondition: " + "temperature is " + temperature + ".C");
     }
 
 
