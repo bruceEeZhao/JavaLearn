@@ -1,5 +1,8 @@
 package decorator;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public abstract class CondimentDecorator extends Beverage{
     public abstract String getDescription();
 }
@@ -7,8 +10,18 @@ public abstract class CondimentDecorator extends Beverage{
 class Milk extends CondimentDecorator {
     private Beverage beverage;
 
+    // private Map<Size, Double> price = new HashMap<Size, Double>();
+
     public Milk(Beverage beverage) {
         this.beverage = beverage;
+        /*
+        setSize(beverage.getSize());
+
+        price.put(Size.SMALL, 0.11);
+        price.put(Size.MEDIUM, 0.15);
+        price.put(Size.LARGE, 0.31);
+
+         */
     }
 
     @Override
@@ -18,7 +31,8 @@ class Milk extends CondimentDecorator {
 
     @Override
     public double cost() {
-        return beverage.cost() + 0.5;
+        // return beverage.cost() + price.get(getSize());
+        return beverage.cost() + 0.3;
     }
 }
 
