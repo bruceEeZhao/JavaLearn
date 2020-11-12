@@ -8,6 +8,7 @@
 2. 观察者模式(Observer pattern): [博客](https://bruceeezhao.github.io/2020/10/16/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E5%AD%A6%E4%B9%A0%E4%B9%8B-02ObserverPattern/) --- [代码](https://github.com/bruceEeZhao/JavaLearn/tree/master/designPatterns/src/observer)
 3. 装饰模式(Decorator pattern): [博客](https://bruceeezhao.github.io/2020/10/28/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E5%AD%A6%E4%B9%A0%E4%B9%8B-03%E8%A3%85%E9%A5%B0%E6%A8%A1%E5%BC%8F/) --- [代码](https://github.com/bruceEeZhao/JavaLearn/tree/master/designPatterns/src/decorator)
 4. 工厂模式(Factory pattern): [博客](https://bruceeezhao.github.io/2020/11/06/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E5%AD%A6%E4%B9%A0%E4%B9%8B-04%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/) --- [代码](https://github.com/bruceEeZhao/JavaLearn/tree/master/designPatterns/src/factory)
+5. 单例模式(Singleton pattern): [博客](https://bruceeezhao.github.io/2020/11/11/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E5%AD%A6%E4%B9%A0%E4%B9%8B-05%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/) --- [代码](https://github.com/bruceEeZhao/JavaLearn/tree/master/designPatterns/src/singleton/src)
 
 
 # 2. java基础
