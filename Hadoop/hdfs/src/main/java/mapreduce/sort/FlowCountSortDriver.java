@@ -31,9 +31,12 @@ public class FlowCountSortDriver {
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(FlowBean.class);
 
+        job.setPartitionerClass(ProvincePartitioner.class);
+        job.setNumReduceTasks(5);
+
         // 6 设置输入输出路径
         FileInputFormat.setInputPaths(job, new Path("/phonedata"));
-        FileOutputFormat.setOutputPath(job, new Path("/output2"));
+        FileOutputFormat.setOutputPath(job, new Path("/output3"));
         // 7 提交job
         job.waitForCompletion(true);
     }
