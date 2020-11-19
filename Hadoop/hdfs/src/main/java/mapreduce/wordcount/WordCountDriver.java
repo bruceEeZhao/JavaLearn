@@ -32,9 +32,13 @@ public class WordCountDriver {
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
 
+//        // Combiner
+//        job.setCombinerClass(WordCountCombiner.class);
+        job.setCombinerClass(WordCountReducer.class);
+
         // 6 设置输入路径和输出路径
-        FileInputFormat.setInputPaths(job, new Path(args[0]));
-        FileOutputFormat.setOutputPath(job, new Path(args[1]));
+        FileInputFormat.setInputPaths(job, new Path("/hadooptest.txt"));
+        FileOutputFormat.setOutputPath(job, new Path("/output"));
 
         // 7 提交job
         job.waitForCompletion(true);
