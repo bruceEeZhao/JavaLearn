@@ -31,6 +31,10 @@ public class FlowDriver {
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(FLowBean.class);
 
+        // 设置分区类,及分区个数
+        job.setPartitionerClass(ProvincePartitioner.class);
+        job.setNumReduceTasks(5);
+
         // 6 设置输入输出路径
         FileInputFormat.setInputPaths(job, new Path("/phonedata"));
         FileOutputFormat.setOutputPath(job, new Path("/output"));
