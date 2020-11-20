@@ -1,4 +1,4 @@
-package inputformat;
+package mapreduce.inputformat;
 
 
 import org.apache.hadoop.io.BytesWritable;
